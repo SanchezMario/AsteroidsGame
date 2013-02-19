@@ -1,0 +1,127 @@
+!SESSION 2013-02-14 17:41:34.468 -----------------------------------------------
+eclipse.buildId=v21.1.0-569685
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY com.android.ide.eclipse.ddms 4 0 2013-02-14 17:42:04.515
+!MESSAGE DDMS files not found: C:\adt-bundle-windows-x86\eclipse\platform-tools\adb.exe C:\adt-bundle-windows-x86\eclipse\tools\hprof-conv.exe C:\adt-bundle-windows-x86\eclipse\tools\traceview.bat 
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-14 17:43:32.437
+!MESSAGE New Project Wizard failed
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:642)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:559)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$2.execute(NewProjectCreator.java:371)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:689)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:626)
+	... 6 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:287)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:689)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:626)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:559)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$2.execute(NewProjectCreator.java:371)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: OK
+Contains: C:\Proyectos\cursoAndroid overlaps the workspace location: C:\Proyectos\cursoAndroid
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-02-14 17:44:16.812
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-02-14 17:44:16.812
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Documents and Settings\MarioSanchez'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-14 17:47:16.234
+!MESSAGE 
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not read from source when writing file: C:\Proyectos\cursoAndroid\.metadata\.lock
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:78)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:222)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:143)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:111)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:181)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:141)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:111)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:181)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:141)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:111)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.FileStoreAdapter.copy(FileStoreAdapter.java:68)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.populate(NewProjectCreator.java:619)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:714)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:626)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:559)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$2.execute(NewProjectCreator.java:371)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:75)
+	... 19 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2013-02-14 17:47:16.234
+!MESSAGE Could not read from source when writing file: C:\Proyectos\cursoAndroid\.metadata\.lock
+!STACK 0
+java.io.IOException: El proceso no tiene acceso al archivo porque otro proceso tiene bloqueada una parte del archivo
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.core.filesystem.provider.FileStore.transferStreams(FileStore.java:75)
+	at org.eclipse.core.filesystem.provider.FileStore.copyFile(FileStore.java:222)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:143)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:111)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:181)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:141)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:111)
+	at org.eclipse.core.filesystem.provider.FileStore.copyDirectory(FileStore.java:181)
+	at org.eclipse.core.filesystem.provider.FileStore.copy(FileStore.java:141)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:111)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.FileStoreAdapter.copy(FileStoreAdapter.java:68)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$3.populate(NewProjectCreator.java:619)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createEclipseProject(NewProjectCreator.java:714)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.createProjectAsync(NewProjectCreator.java:626)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator.access$0(NewProjectCreator.java:559)
+	at com.android.ide.eclipse.adt.internal.wizards.newproject.NewProjectCreator$2.execute(NewProjectCreator.java:371)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-14 17:47:16.656
+!MESSAGE Failed to load properties file for project 'Asteroides'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-14 17:47:16.843
+!MESSAGE Failed to load properties file for project 'Asteroides'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-14 17:47:16.921
+!MESSAGE Failed to load properties file for project 'Asteroides'

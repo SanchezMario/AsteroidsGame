@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Asteroides</string>
+    <string name="hello_world">Hello world, Asteroides!</string>
+    
+    <string name="tituloAplicacion">Asteroides</string>
+    <string name="Arrancar">Jugar</string>
+    <string name="Configurar">Configurar</string>
+    <string name="Acercade">Acerca de</string>
+    <string name="Puntuaciones">Puntuaciones</string>
+    <string name="textoacercade">Este programa ha sido desarrollado por Mario Sánchez, como ejercício del curso de desarollo Android impartido por la Universidad Politécnica de Valencia</string>
+    <string name="nopuntuaciones">No hay puntuaciones</string>
+
+</resources>

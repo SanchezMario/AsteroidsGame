@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Asteroid</string>
+    <string name="hello_world">Hello world, Asteroides!</string>
+    
+    <string name="tituloAplicacion">Asteroid</string>
+    <string name="Arrancar">Play</string>
+    <string name="Configurar">Configurations</string>
+    <string name="Acercade">About this</string>
+    <string name="Puntuaciones">Scores</string>
+	<string name="textoacercade"> Asteroid by Mario Sanchez,Exercise for Android development´s grade imparted by Politechnic University of Valencia</string>
+	<string name="nopuntuaciones">No Scores</string>
+</resources>

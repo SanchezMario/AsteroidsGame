@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="35dp"
+    tools:context=".Asteroides" >
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/TextoAsteroides"
+        android:shadowColor="@color/negro"
+        android:shadowDx="1"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="@string/tituloAplicacion"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/TextoAsteroides.Botones"
+                android:text="@string/Arrancar" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/TextoAsteroides.Botones"
+                android:text="@string/Configurar" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/TextoAsteroides.Botones"
+                android:text="@string/Acercade" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/TextoAsteroides.Botones"
+                android:text="@string/Puntuaciones" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
