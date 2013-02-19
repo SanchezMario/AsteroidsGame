@@ -9,8 +9,8 @@ public class AlmacenPuntuacionesArray implements AlmacenPuntuaciones {
 	public AlmacenPuntuacionesArray() {
 		puntuaciones = new Vector<String>();
 		puntuaciones.add("124000 Aitor Sanchez");
-		puntuaciones.add("123000 Maikel Sanchez");
-		puntuaciones.add("100000 Pepito Perez");
+		puntuaciones.add("100000 Maikel Sanchez");
+		puntuaciones.add("10000 Pepito Perez");
 	}
 
 	@Override
