@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="35dp"
     tools:context=".Asteroides" 
-    android:background="@drawable/space">
+    android:background="@drawable/degradado">
 
     <TextView  
         android:id="@+id/titulo"
