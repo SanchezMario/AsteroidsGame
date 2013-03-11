@@ -27,8 +27,20 @@
             android:label="Acerca de..."
             android:theme="@android:style/Theme.Dialog" >
         </activity>
-        <activity android:name="Preferencias" android:label="Preferencias"></activity>
-        <activity android:name="com.example.asteroides.Puntuaciones" android:label="Puntuaciones"></activity>
+        <activity
+            android:name="Preferencias"
+            android:label="Preferencias" >
+        </activity>
+        <activity
+            android:name="com.example.asteroides.Puntuaciones"
+            android:label="Puntuaciones" >
+        </activity>
+        <activity
+            android:name="Juego"
+            android:label="Juego"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
     </application>
 
 </manifest>

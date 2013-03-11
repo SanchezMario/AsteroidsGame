@@ -20,6 +20,7 @@ public class Asteroides extends Activity {
 	private Button bAcercaDe;
 	private Button bPuntuaciones;
 	private Button bPreferencias;
+	private Button bJuego;
 	public static AlmacenPuntuaciones almacen = new AlmacenPuntuacionesArray();
 
 	@Override
@@ -32,6 +33,16 @@ public class Asteroides extends Activity {
 		TextView tituloApp = (TextView) findViewById(R.id.titulo);
 		tituloApp.setTypeface(spaceFont);
 
+		bJuego = (Button) findViewById(R.id.button1);
+		bJuego.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				lanzarJuego(null);
+				
+			}
+		});
+		
 		bAcercaDe = (Button) findViewById(R.id.button3);
 		bAcercaDe.setOnClickListener(new OnClickListener() {
 
@@ -95,6 +106,10 @@ public class Asteroides extends Activity {
 
 	public void lanzarPuntuaciones(View view) {
 		Intent i = new Intent(this, Puntuaciones.class);
+		startActivity(i);
+	}
+	public void lanzarJuego(View view) {
+		Intent i = new	Intent(this, Juego.class);
 		startActivity(i);
 	}
 
